@@ -5,12 +5,16 @@ import "./assets/style/icon.css"
 import "./assets/style/reset.css"
 import "./assets/style/border.css"
 
+// 解决移动端点击延迟300ms问题
 import fastClick from 'fastclick'
 fastClick.attach(document.body)
 
-import moment from 'moment'; //导入模块
-moment.locale('zh-cn'); //设置语言 或 moment.lang('zh-cn'); 
-Vue.prototype.$moment = moment;//赋值使用
+// JavaScript 日期处理类库 文档地址 http://momentjs.cn/
+import moment from 'moment'
+moment.locale('zh-cn')
+Vue.prototype.$moment = moment
+
+
 
 Vue.config.productionTip = false
 
